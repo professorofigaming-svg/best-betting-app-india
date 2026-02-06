@@ -659,4 +659,86 @@ body {
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    /* Daily Cricket Widget Styles */
+.daily-cricket-widget {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: var(--border-radius);
+    margin: 40px 0;
 }
+
+.widget-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.match-preview {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.team {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.team1 {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.team2 {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.vs {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.btn-view-details {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: var(--transition);
+}
+
+.btn-view-details:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* Mobile responsive for widget */
+@media (max-width: 768px) {
+    .teams {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .team {
+        font-size: 1.5rem;
+        padding: 8px 20px;
+    }
+}
+}
+
